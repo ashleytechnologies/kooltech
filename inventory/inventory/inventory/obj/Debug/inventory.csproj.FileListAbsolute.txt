@@ -1,0 +1,48 @@
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmAddEditProduct.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmAddEditStaff.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmAddProductQuick.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmImportProduct.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmListCategory.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmListofTransactions.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmListProduct.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmListProductStocksIn.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmListReturns.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmListStaff.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmLogin.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmMain.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmReports.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmSelectCategory.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.frmStock.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.Properties.Resources.resources
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.csproj.GenerateResource.Cache
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\bin\Debug\inventory.exe
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\bin\Debug\inventory.pdb
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\bin\Debug\MySql.Data.dll
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\bin\Debug\MySql.Data.Entity.dll
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\bin\Debug\MySql.Data.xml
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\bin\Debug\MySql.Data.Entity.EF6.xml
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.exe
+C:\Users\Anuththara\documents\visual studio 2015\Projects\inventory\inventory\obj\Debug\inventory.pdb
+F:\Dddddd\inventory\inventory\bin\Debug\inventory.exe
+F:\Dddddd\inventory\inventory\bin\Debug\inventory.pdb
+F:\Dddddd\inventory\inventory\bin\Debug\MySql.Data.xml
+F:\Dddddd\inventory\inventory\bin\Debug\MySql.Data.Entity.EF6.xml
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.csprojResolveAssemblyReference.cache
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmStock.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.Properties.Resources.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.csproj.GenerateResource.Cache
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.csproj.CoreCompileInputs.cache
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.exe
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.pdb
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmHome.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmBarcode.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmCreditSettlement.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmDebtors.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmGoodsReturn.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmInvoice.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmInvoiceCancellation.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmReceipts.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmSalesReports.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmSalesReturn.resources
+F:\Dddddd\inventory\inventory\obj\Debug\inventory.frmStockAdjustment.resources
