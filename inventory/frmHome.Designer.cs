@@ -97,23 +97,23 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DIs = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DisVal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblDate = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtitmId = new System.Windows.Forms.TextBox();
+            this.TxtDiscouont = new System.Windows.Forms.TextBox();
+            this.TxtPcs = new System.Windows.Forms.TextBox();
+            this.TxtPrice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.Product = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIs = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DisVal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Amount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -463,7 +463,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(1150, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 22);
             this.pictureBox1.TabIndex = 6;
@@ -476,7 +476,7 @@
             this.btnCloseIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseIcon.BackgroundImage")));
             this.btnCloseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCloseIcon.Location = new System.Drawing.Point(1172, 9);
-            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1);
             this.btnCloseIcon.Name = "btnCloseIcon";
             this.btnCloseIcon.Size = new System.Drawing.Size(20, 22);
             this.btnCloseIcon.TabIndex = 5;
@@ -490,7 +490,7 @@
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimize.Location = new System.Drawing.Point(1127, 9);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 22);
             this.btnMinimize.TabIndex = 3;
@@ -586,7 +586,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(4, 169);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(741, 89);
             this.panel1.TabIndex = 27;
@@ -594,7 +594,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(483, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(225, 20);
             this.textBox1.TabIndex = 39;
@@ -698,58 +698,16 @@
             this.Product,
             this.Description,
             this.Quantity,
-            this.Price,
             this.DIs,
+            this.Price,
             this.DisVal,
             this.Amount});
             this.dataGridView1.Location = new System.Drawing.Point(4, 307);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.Size = new System.Drawing.Size(1210, 274);
+            this.dataGridView1.Size = new System.Drawing.Size(1183, 274);
             this.dataGridView1.TabIndex = 29;
-            // 
-            // Product
-            // 
-            this.Product.HeaderText = "Product";
-            this.Product.Name = "Product";
-            this.Product.Width = 200;
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Description";
-            this.Description.Name = "Description";
-            this.Description.Width = 200;
-            // 
-            // Quantity
-            // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.Name = "Quantity";
-            this.Quantity.Width = 200;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Price";
-            this.Price.Name = "Price";
-            this.Price.Width = 200;
-            // 
-            // DIs
-            // 
-            this.DIs.HeaderText = "Dis";
-            this.DIs.Name = "DIs";
-            this.DIs.Width = 200;
-            // 
-            // DisVal
-            // 
-            this.DisVal.HeaderText = "DisVal";
-            this.DisVal.Name = "DisVal";
-            this.DisVal.Width = 200;
-            // 
-            // Amount
-            // 
-            this.Amount.HeaderText = "Amount";
-            this.Amount.Name = "Amount";
-            this.Amount.Width = 200;
             // 
             // lblDate
             // 
@@ -771,33 +729,35 @@
             this.label9.TabIndex = 28;
             this.label9.Text = "Date and Time:";
             // 
-            // textBox2
+            // TxtitmId
             // 
-            this.textBox2.Location = new System.Drawing.Point(9, 283);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(198, 20);
-            this.textBox2.TabIndex = 30;
+            this.TxtitmId.Location = new System.Drawing.Point(9, 283);
+            this.TxtitmId.Name = "TxtitmId";
+            this.TxtitmId.Size = new System.Drawing.Size(198, 20);
+            this.TxtitmId.TabIndex = 30;
             // 
-            // textBox3
+            // TxtDiscouont
             // 
-            this.textBox3.Location = new System.Drawing.Point(213, 283);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(198, 20);
-            this.textBox3.TabIndex = 31;
+            this.TxtDiscouont.Location = new System.Drawing.Point(213, 283);
+            this.TxtDiscouont.Name = "TxtDiscouont";
+            this.TxtDiscouont.Size = new System.Drawing.Size(198, 20);
+            this.TxtDiscouont.TabIndex = 31;
             // 
-            // textBox4
+            // TxtPcs
             // 
-            this.textBox4.Location = new System.Drawing.Point(417, 283);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(198, 20);
-            this.textBox4.TabIndex = 32;
+            this.TxtPcs.Location = new System.Drawing.Point(417, 283);
+            this.TxtPcs.Name = "TxtPcs";
+            this.TxtPcs.Size = new System.Drawing.Size(198, 20);
+            this.TxtPcs.TabIndex = 32;
             // 
-            // textBox5
+            // TxtPrice
             // 
-            this.textBox5.Location = new System.Drawing.Point(621, 283);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(198, 20);
-            this.textBox5.TabIndex = 33;
+            this.TxtPrice.Location = new System.Drawing.Point(621, 283);
+            this.TxtPrice.Name = "TxtPrice";
+            this.TxtPrice.Size = new System.Drawing.Size(198, 20);
+            this.TxtPrice.TabIndex = 33;
+            this.TxtPrice.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.TxtPrice.Leave += new System.EventHandler(this.textBox5_Leave);
             // 
             // label4
             // 
@@ -840,6 +800,48 @@
             this.label10.TabIndex = 40;
             this.label10.Text = "Price";
             // 
+            // Product
+            // 
+            this.Product.HeaderText = "Product";
+            this.Product.Name = "Product";
+            this.Product.Width = 200;
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            this.Description.Width = 200;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 200;
+            // 
+            // DIs
+            // 
+            this.DIs.HeaderText = "Dis";
+            this.DIs.Name = "DIs";
+            this.DIs.Width = 200;
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Price";
+            this.Price.Name = "Price";
+            this.Price.Width = 200;
+            // 
+            // DisVal
+            // 
+            this.DisVal.HeaderText = "Billing Price";
+            this.DisVal.Name = "DisVal";
+            this.DisVal.Width = 200;
+            // 
+            // Amount
+            // 
+            this.Amount.HeaderText = "Amount";
+            this.Amount.Name = "Amount";
+            this.Amount.Width = 200;
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -850,10 +852,10 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TxtPrice);
+            this.Controls.Add(this.TxtPcs);
+            this.Controls.Add(this.TxtDiscouont);
+            this.Controls.Add(this.TxtitmId);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel1);
@@ -868,7 +870,7 @@
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmHome";
             this.Text = "frmHome";
             this.Load += new System.EventHandler(this.frmHome_Load);
@@ -959,20 +961,20 @@
         private System.Windows.Forms.ToolStripMenuItem salesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem purchasingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem debtorsToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Product;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DIs;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DisVal;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtitmId;
+        private System.Windows.Forms.TextBox TxtDiscouont;
+        private System.Windows.Forms.TextBox TxtPcs;
+        private System.Windows.Forms.TextBox TxtPrice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Product;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIs;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DisVal;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Amount;
     }
 }
