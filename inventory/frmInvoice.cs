@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace inventory
 {
@@ -18,7 +19,102 @@ namespace inventory
 
         private void frmInvoice_Load(object sender, EventArgs e)
         {
+            lblDate.Text = DateTime.Now.ToString();
+            this.Size = new Size(Screen.PrimaryScreen.WorkingArea.Width, Screen.PrimaryScreen.WorkingArea.Height);
+            this.Location = new Point(0, 0);
+            generateLastInvoiceID();
+            generateInvoiceID();
+        }
 
+        public void generateInvoiceID()
+        {
+            long value;
+            SqlConnection con = connection.OpenConnection();
+            SqlCommand cmd = new SqlCommand("SELECT TOP 1 [ItmId] FROM [dbo].[TblItem] ORDER BY [ItmId] DESC", con);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            if (rdr.HasRows)
+            {
+                rdr.Read();
+                value = rdr.GetInt64(0);
+                value++;
+                lblInvNo.Text = value.ToString();
+            }
+
+        }
+
+        public void generateLastInvoiceID()
+        {
+            long value;
+            SqlConnection con = connection.OpenConnection();
+            SqlCommand cmd = new SqlCommand("SELECT TOP 1 [ItmId] FROM [dbo].[TblItem] ORDER BY [ItmId] DESC", con);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            if (rdr.HasRows)
+            {
+                rdr.Read();
+                value = rdr.GetInt64(0);
+                lblLastInv.Text = value.ToString();
+            }
+
+        }
+
+        private void TxtQuantity_Leave(object sender, EventArgs e)
+        {
+            int n = dataGridView1.Rows.Add();
+            dataGridView1.Rows[n].Cells[0].Value = txtProductID.Text;
+            dataGridView1.Rows[n].Cells[2].Value = TxtQuantity.Text;
+            dataGridView1.Rows[n].Cells[3].Value = TxtDiscouont.Text;
+            dataGridView1.Rows[n].Cells[4].Value = TxtPrice.Text;
+            dataGridView1.Rows[n].Cells[5].Value = TxtPrice.Text;
+            if (n < 1)
+            {
+                dataGridView1.Rows[n].Cells[6].Value = Convert.ToDecimal(TxtPrice.Text);
+            }
+            else if (n > 0)
+            {
+                dataGridView1.Rows[n].Cells[6].Value = Convert.ToDecimal(TxtPrice.Text) + Convert.ToDecimal(dataGridView1.Rows[n - 1].Cells[6].Value);
+            }
+            BulkToMySQL();
+        }
+
+        public static void BulkToMySQL()
+        {
+            SqlConnection con = connection.OpenConnection();
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandText = "INSERT INTO [dbo].[TblItem] ([ItmOrdinary] ,[ItmName] ,[ItemShortDes] ,[ItmDes] ,[ItmImage] ,[ItmVat] ,[ItmWholesalePrice] ,[ItmRetailPrice] ,[ItmMaxDiscount] ,[ItemUniqueId] ,[ItmCategory] ,[ItmSubCategory] ,[ItmBarcode] ,[Itm ReorderQuentity] ,[ItemActive] ,[ItmBrand] ,[ItmCost] ,[ItmMargine]) VALUES ('text','text','text','text','text',1,1,1,1,'text','text','text','text',1,1,'text',9,2)";
+            cmd.Connection = con;
+
+           cmd.ExecuteNonQuery();
+
+
+        }
+
+        private void btnCloseIcon_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtProductID_Leave(object sender, EventArgs e)
+        {
+            string productId = txtProductID.Text;
+            SqlConnection con = connection.OpenConnection();
+            SqlCommand cmd = new SqlCommand("SELECT [ItmName], [ItmPrice] FROM [dbo].[TblItem] WHERE [ItmId]=10003", con);
+            SqlDataReader rdr;
+            rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+            if (rdr.HasRows)
+            {
+                rdr.Read();
+                txtsih.Text = rdr.GetString(0);
+                //TxtPrice.Text = rdr.GetString(1);
+            }
         }
     }
 }
