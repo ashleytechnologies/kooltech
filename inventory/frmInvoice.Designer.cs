@@ -106,6 +106,20 @@
             this.btnCloseIcon = new System.Windows.Forms.PictureBox();
             this.btnMinimize = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.TxtPrice = new System.Windows.Forms.TextBox();
+            this.TxtQuantity = new System.Windows.Forms.TextBox();
+            this.TxtDiscouont = new System.Windows.Forms.TextBox();
+            this.txtProductID = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtsih = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtDisVal = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.txtBillDis = new System.Windows.Forms.TextBox();
             this.lblNetAmt = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lblItemDis = new System.Windows.Forms.Label();
@@ -136,7 +150,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(3, 166);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(743, 89);
             this.panel1.TabIndex = 40;
@@ -144,7 +158,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(483, 12);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(1);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(225, 20);
             this.textBox1.TabIndex = 39;
@@ -341,6 +355,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Product,
@@ -350,11 +366,11 @@
             this.DIs,
             this.DisVal,
             this.Amount});
-            this.dataGridView1.Location = new System.Drawing.Point(3, 258);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.dataGridView1.Location = new System.Drawing.Point(10, 306);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(1);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 40;
-            this.dataGridView1.Size = new System.Drawing.Size(743, 321);
+            this.dataGridView1.Size = new System.Drawing.Size(1241, 321);
             this.dataGridView1.TabIndex = 42;
             // 
             // Product
@@ -713,7 +729,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(728, 54);
+            this.panel2.Size = new System.Drawing.Size(1261, 54);
             this.panel2.TabIndex = 43;
             // 
             // pictureBox1
@@ -722,12 +738,13 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(681, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(1214, 9);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 22);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCloseIcon
             // 
@@ -735,12 +752,13 @@
             this.btnCloseIcon.BackColor = System.Drawing.Color.Transparent;
             this.btnCloseIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseIcon.BackgroundImage")));
             this.btnCloseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCloseIcon.Location = new System.Drawing.Point(703, 9);
-            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCloseIcon.Location = new System.Drawing.Point(1236, 9);
+            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1);
             this.btnCloseIcon.Name = "btnCloseIcon";
             this.btnCloseIcon.Size = new System.Drawing.Size(20, 22);
             this.btnCloseIcon.TabIndex = 5;
             this.btnCloseIcon.TabStop = false;
+            this.btnCloseIcon.Click += new System.EventHandler(this.btnCloseIcon_Click);
             // 
             // btnMinimize
             // 
@@ -748,8 +766,8 @@
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMinimize.Location = new System.Drawing.Point(658, 9);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnMinimize.Location = new System.Drawing.Point(1191, 9);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 22);
             this.btnMinimize.TabIndex = 3;
@@ -766,92 +784,213 @@
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Inventory Management";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(280, 266);
+            this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.TabIndex = 68;
+            this.label4.Text = "Price";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(685, 266);
+            this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 13);
+            this.label8.TabIndex = 71;
+            this.label8.Text = "Quantity";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(412, 266);
+            this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(49, 13);
+            this.label12.TabIndex = 70;
+            this.label12.Text = "Discount";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(9, 266);
+            this.label14.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(58, 13);
+            this.label14.TabIndex = 69;
+            this.label14.Text = "Product ID";
+            // 
+            // TxtPrice
+            // 
+            this.TxtPrice.Location = new System.Drawing.Point(279, 282);
+            this.TxtPrice.Name = "TxtPrice";
+            this.TxtPrice.Size = new System.Drawing.Size(130, 20);
+            this.TxtPrice.TabIndex = 67;
+            // 
+            // TxtQuantity
+            // 
+            this.TxtQuantity.Location = new System.Drawing.Point(687, 282);
+            this.TxtQuantity.Name = "TxtQuantity";
+            this.TxtQuantity.Size = new System.Drawing.Size(130, 20);
+            this.TxtQuantity.TabIndex = 66;
+            this.TxtQuantity.Leave += new System.EventHandler(this.TxtQuantity_Leave);
+            // 
+            // TxtDiscouont
+            // 
+            this.TxtDiscouont.Location = new System.Drawing.Point(415, 282);
+            this.TxtDiscouont.Name = "TxtDiscouont";
+            this.TxtDiscouont.Size = new System.Drawing.Size(130, 20);
+            this.TxtDiscouont.TabIndex = 65;
+            // 
+            // txtProductID
+            // 
+            this.txtProductID.Location = new System.Drawing.Point(10, 282);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(130, 20);
+            this.txtProductID.TabIndex = 64;
+            this.txtProductID.Leave += new System.EventHandler(this.txtProductID_Leave);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(143, 266);
+            this.label15.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(25, 13);
+            this.label15.TabIndex = 73;
+            this.label15.Text = "SIH";
+            // 
+            // txtsih
+            // 
+            this.txtsih.Location = new System.Drawing.Point(146, 282);
+            this.txtsih.Name = "txtsih";
+            this.txtsih.Size = new System.Drawing.Size(130, 20);
+            this.txtsih.TabIndex = 72;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(548, 266);
+            this.label16.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(40, 13);
+            this.label16.TabIndex = 75;
+            this.label16.Text = "Dis Val";
+            // 
+            // txtDisVal
+            // 
+            this.txtDisVal.Location = new System.Drawing.Point(551, 282);
+            this.txtDisVal.Name = "txtDisVal";
+            this.txtDisVal.Size = new System.Drawing.Size(130, 20);
+            this.txtDisVal.TabIndex = 74;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(837, 266);
+            this.label17.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(38, 13);
+            this.label17.TabIndex = 77;
+            this.label17.Text = "Bill Dis";
+            // 
+            // txtBillDis
+            // 
+            this.txtBillDis.Location = new System.Drawing.Point(840, 282);
+            this.txtBillDis.Name = "txtBillDis";
+            this.txtBillDis.Size = new System.Drawing.Size(130, 20);
+            this.txtBillDis.TabIndex = 76;
+            // 
             // lblNetAmt
             // 
             this.lblNetAmt.AutoSize = true;
             this.lblNetAmt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNetAmt.Location = new System.Drawing.Point(352, 609);
+            this.lblNetAmt.Location = new System.Drawing.Point(353, 663);
             this.lblNetAmt.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblNetAmt.Name = "lblNetAmt";
             this.lblNetAmt.Size = new System.Drawing.Size(28, 13);
-            this.lblNetAmt.TabIndex = 63;
+            this.lblNetAmt.TabIndex = 85;
             this.lblNetAmt.Text = "0.00";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(238, 609);
+            this.label11.Location = new System.Drawing.Point(239, 663);
             this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(69, 13);
-            this.label11.TabIndex = 62;
+            this.label11.TabIndex = 84;
             this.label11.Text = "Net Amount :";
             // 
             // lblItemDis
             // 
             this.lblItemDis.AutoSize = true;
             this.lblItemDis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblItemDis.Location = new System.Drawing.Point(350, 589);
+            this.lblItemDis.Location = new System.Drawing.Point(351, 643);
             this.lblItemDis.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblItemDis.Name = "lblItemDis";
             this.lblItemDis.Size = new System.Drawing.Size(28, 13);
-            this.lblItemDis.TabIndex = 61;
+            this.lblItemDis.TabIndex = 83;
             this.lblItemDis.Text = "0.00";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(238, 589);
+            this.label13.Location = new System.Drawing.Point(239, 643);
             this.label13.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(78, 13);
-            this.label13.TabIndex = 60;
+            this.label13.TabIndex = 82;
             this.label13.Text = "Item Discount :";
             // 
             // lblDiscount
             // 
             this.lblDiscount.AutoSize = true;
             this.lblDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDiscount.Location = new System.Drawing.Point(122, 609);
+            this.lblDiscount.Location = new System.Drawing.Point(123, 663);
             this.lblDiscount.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblDiscount.Name = "lblDiscount";
             this.lblDiscount.Size = new System.Drawing.Size(28, 13);
-            this.lblDiscount.TabIndex = 59;
+            this.lblDiscount.TabIndex = 81;
             this.lblDiscount.Text = "0.00";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(8, 609);
+            this.label7.Location = new System.Drawing.Point(9, 663);
             this.label7.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 58;
+            this.label7.TabIndex = 80;
             this.label7.Text = "Discount :";
             // 
             // lblGrossAmt
             // 
             this.lblGrossAmt.AutoSize = true;
             this.lblGrossAmt.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrossAmt.Location = new System.Drawing.Point(120, 589);
+            this.lblGrossAmt.Location = new System.Drawing.Point(121, 643);
             this.lblGrossAmt.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblGrossAmt.Name = "lblGrossAmt";
             this.lblGrossAmt.Size = new System.Drawing.Size(28, 13);
-            this.lblGrossAmt.TabIndex = 57;
+            this.lblGrossAmt.TabIndex = 79;
             this.lblGrossAmt.Text = "0.00";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(8, 589);
+            this.label10.Location = new System.Drawing.Point(9, 643);
             this.label10.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(79, 13);
-            this.label10.TabIndex = 56;
+            this.label10.TabIndex = 78;
             this.label10.Text = "Gross Amount :";
             // 
             // frmInvoice
@@ -859,7 +998,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(728, 461);
+            this.ClientSize = new System.Drawing.Size(1261, 702);
             this.Controls.Add(this.lblNetAmt);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblItemDis);
@@ -868,6 +1007,20 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lblGrossAmt);
             this.Controls.Add(this.label10);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.txtBillDis);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.txtDisVal);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtsih);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.TxtPrice);
+            this.Controls.Add(this.TxtQuantity);
+            this.Controls.Add(this.TxtDiscouont);
+            this.Controls.Add(this.txtProductID);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnPrint);
@@ -882,7 +1035,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(1);
             this.Name = "frmInvoice";
             this.Text = "frmInvoice";
             this.Load += new System.EventHandler(this.frmInvoice_Load);
@@ -980,6 +1133,20 @@
         private System.Windows.Forms.PictureBox btnCloseIcon;
         private System.Windows.Forms.PictureBox btnMinimize;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox TxtPrice;
+        private System.Windows.Forms.TextBox TxtQuantity;
+        private System.Windows.Forms.TextBox TxtDiscouont;
+        private System.Windows.Forms.TextBox txtProductID;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox txtsih;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtDisVal;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox txtBillDis;
         private System.Windows.Forms.Label lblNetAmt;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lblItemDis;

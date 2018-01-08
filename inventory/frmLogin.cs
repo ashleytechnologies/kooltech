@@ -21,7 +21,7 @@ namespace inventory
         private void btnLogin_Click(object sender, EventArgs e)
         {
 
-          
+
             if ("1" == "1")
             {
                 /* I have made a new page called home page. If the user is successfully authenticated then the form will be moved to the next form */
@@ -30,7 +30,9 @@ namespace inventory
                 Home.Show();
             }
             else
+            {
                 MessageBox.Show("Invalid username or password");
+        }
 
         }
     }
