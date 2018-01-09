@@ -106,14 +106,24 @@ namespace inventory
         {
             string productId = txtProductID.Text;
             SqlConnection con = connection.OpenConnection();
-            SqlCommand cmd = new SqlCommand("SELECT [ItmName], [ItmPrice] FROM [dbo].[TblItem] WHERE [ItmId]=10003", con);
+            SqlCommand cmd = new SqlCommand("SELECT [ItmName],[ItmPrice],[ItmBarcode],[ItemActive],[ItmBrand] FROM [dbo].[TblItem] WHERE [ItmId]=(@productID)", con);
+            cmd.Parameters.AddWithValue("@productID", productId);
             SqlDataReader rdr;
             rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
             if (rdr.HasRows)
             {
                 rdr.Read();
-                txtsih.Text = rdr.GetString(0);
-                //TxtPrice.Text = rdr.GetString(1);
+
+                string name = rdr.GetString(0);
+                TxtPrice.Text = rdr.GetDecimal(1).ToString();
+                Boolean active = rdr.GetBoolean(3);
+
+                if(active == false)
+                {
+                    MessageBox.Show("Sorry item not available in stock.");
+                }
+
+
             }
         }
     }

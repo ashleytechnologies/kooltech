@@ -114,8 +114,6 @@
             this.TxtQuantity = new System.Windows.Forms.TextBox();
             this.TxtDiscouont = new System.Windows.Forms.TextBox();
             this.txtProductID = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtsih = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txtDisVal = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -128,6 +126,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.lblGrossAmt = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -787,7 +786,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(280, 266);
+            this.label4.Location = new System.Drawing.Point(148, 266);
             this.label4.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
@@ -797,7 +796,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(685, 266);
+            this.label8.Location = new System.Drawing.Point(553, 266);
             this.label8.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(46, 13);
@@ -807,7 +806,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(412, 266);
+            this.label12.Location = new System.Drawing.Point(280, 266);
             this.label12.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(49, 13);
@@ -826,25 +825,25 @@
             // 
             // TxtPrice
             // 
-            this.TxtPrice.Location = new System.Drawing.Point(279, 282);
+            this.TxtPrice.Location = new System.Drawing.Point(147, 282);
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(130, 20);
-            this.TxtPrice.TabIndex = 67;
+            this.TxtPrice.TabIndex = 66;
             // 
             // TxtQuantity
             // 
-            this.TxtQuantity.Location = new System.Drawing.Point(687, 282);
+            this.TxtQuantity.Location = new System.Drawing.Point(555, 282);
             this.TxtQuantity.Name = "TxtQuantity";
             this.TxtQuantity.Size = new System.Drawing.Size(130, 20);
-            this.TxtQuantity.TabIndex = 66;
+            this.TxtQuantity.TabIndex = 69;
             this.TxtQuantity.Leave += new System.EventHandler(this.TxtQuantity_Leave);
             // 
             // TxtDiscouont
             // 
-            this.TxtDiscouont.Location = new System.Drawing.Point(415, 282);
+            this.TxtDiscouont.Location = new System.Drawing.Point(283, 282);
             this.TxtDiscouont.Name = "TxtDiscouont";
             this.TxtDiscouont.Size = new System.Drawing.Size(130, 20);
-            this.TxtDiscouont.TabIndex = 65;
+            this.TxtDiscouont.TabIndex = 67;
             // 
             // txtProductID
             // 
@@ -854,27 +853,10 @@
             this.txtProductID.TabIndex = 64;
             this.txtProductID.Leave += new System.EventHandler(this.txtProductID_Leave);
             // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(143, 266);
-            this.label15.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(25, 13);
-            this.label15.TabIndex = 73;
-            this.label15.Text = "SIH";
-            // 
-            // txtsih
-            // 
-            this.txtsih.Location = new System.Drawing.Point(146, 282);
-            this.txtsih.Name = "txtsih";
-            this.txtsih.Size = new System.Drawing.Size(130, 20);
-            this.txtsih.TabIndex = 72;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(548, 266);
+            this.label16.Location = new System.Drawing.Point(416, 266);
             this.label16.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(40, 13);
@@ -883,15 +865,15 @@
             // 
             // txtDisVal
             // 
-            this.txtDisVal.Location = new System.Drawing.Point(551, 282);
+            this.txtDisVal.Location = new System.Drawing.Point(419, 282);
             this.txtDisVal.Name = "txtDisVal";
             this.txtDisVal.Size = new System.Drawing.Size(130, 20);
-            this.txtDisVal.TabIndex = 74;
+            this.txtDisVal.TabIndex = 68;
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(837, 266);
+            this.label17.Location = new System.Drawing.Point(705, 266);
             this.label17.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(38, 13);
@@ -900,10 +882,10 @@
             // 
             // txtBillDis
             // 
-            this.txtBillDis.Location = new System.Drawing.Point(840, 282);
+            this.txtBillDis.Location = new System.Drawing.Point(708, 282);
             this.txtBillDis.Name = "txtBillDis";
             this.txtBillDis.Size = new System.Drawing.Size(130, 20);
-            this.txtBillDis.TabIndex = 76;
+            this.txtBillDis.TabIndex = 70;
             // 
             // lblNetAmt
             // 
@@ -993,12 +975,22 @@
             this.label10.TabIndex = 78;
             this.label10.Text = "Gross Amount :";
             // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(860, 280);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.TabIndex = 86;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1261, 702);
+            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblNetAmt);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.lblItemDis);
@@ -1011,8 +1003,6 @@
             this.Controls.Add(this.txtBillDis);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.txtDisVal);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.txtsih);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label12);
@@ -1141,8 +1131,6 @@
         private System.Windows.Forms.TextBox TxtQuantity;
         private System.Windows.Forms.TextBox TxtDiscouont;
         private System.Windows.Forms.TextBox txtProductID;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtsih;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txtDisVal;
         private System.Windows.Forms.Label label17;
@@ -1155,5 +1143,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblGrossAmt;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
