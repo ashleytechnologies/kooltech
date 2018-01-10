@@ -20,7 +20,6 @@ namespace inventory
         BarcodeDecoder Scanner;
         SaveFileDialog SD;
         OpenFileDialog OD;
-        
         private void button1_Click(object sender, EventArgs e)
         {
             Scanner = new BarcodeDecoder();
@@ -32,7 +31,7 @@ namespace inventory
         {
             Generator = new BarcodeEncoder();
             Generator.IncludeLabel = true;
-           // Generator.CustomLabel = textBox1.Text;
+            Generator.CustomLabel = textBox1.Text;
             if (textBox1.Text != "")
                 pictureBox1.Image = new Bitmap(Generator.Encode(BarcodeFormat.Code39, textBox1.Text));
 

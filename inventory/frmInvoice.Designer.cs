@@ -829,6 +829,7 @@
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(130, 20);
             this.TxtPrice.TabIndex = 66;
+            this.TxtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtPrice_KeyPress);
             // 
             // TxtQuantity
             // 
@@ -844,6 +845,9 @@
             this.TxtDiscouont.Name = "TxtDiscouont";
             this.TxtDiscouont.Size = new System.Drawing.Size(130, 20);
             this.TxtDiscouont.TabIndex = 67;
+            this.TxtDiscouont.Text = "0.00";
+            this.TxtDiscouont.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TxtDiscouont.Leave += new System.EventHandler(this.TxtDiscouont_Leave);
             // 
             // txtProductID
             // 

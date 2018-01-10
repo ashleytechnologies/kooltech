@@ -76,6 +76,14 @@ namespace inventory
                 dataGridView1.Rows[n].Cells[6].Value = Convert.ToDecimal(TxtPrice.Text) + Convert.ToDecimal(dataGridView1.Rows[n - 1].Cells[6].Value);
             }
             BulkToMySQL();
+
+            int sum = 0;
+            for (int i = 0; i < dataGridView1.Rows.Count; ++i)
+            {
+                sum += Convert.ToInt32(dataGridView1.Rows[i].Cells[3].Value);
+            }
+            lblGrossAmt.Text = sum.ToString();
+
         }
 
         public static void BulkToMySQL()
@@ -84,7 +92,7 @@ namespace inventory
 
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = System.Data.CommandType.Text;
-            cmd.CommandText = "INSERT INTO [dbo].[TblItem] ([ItmOrdinary] ,[ItmName] ,[ItemShortDes] ,[ItmDes] ,[ItmImage] ,[ItmVat] ,[ItmWholesalePrice] ,[ItmRetailPrice] ,[ItmMaxDiscount] ,[ItemUniqueId] ,[ItmCategory] ,[ItmSubCategory] ,[ItmBarcode] ,[Itm ReorderQuentity] ,[ItemActive] ,[ItmBrand] ,[ItmCost] ,[ItmMargine]) VALUES ('text','text','text','text','text',1,1,1,1,'text','text','text','text',1,1,'text',9,2)";
+            cmd.CommandText = "INSERT INTO [dbo].[TblItem] ([ItmOrdinary] ,[ItmName] ,[ItemShortDes] ,[ItmDes] ,[ItmImage] ,[ItmVat] ,[ItmWholesalePrice] ,[ItmRetailPrice] ,[ItmMaxDiscount] ,[ItemUniqueId] ,[ItmCategory] ,[ItmSubCategory] ,[ItmBarcode] ,[Itm ReorderQuentity] ,[ItemActive] ,[ItmBrand] ,[ItmCost] ,[ItmMargine], [ItmPrice]) VALUES ('text','text','text','text','text',1,1,1,1,'text','text','text','text',1,1,'text',9,2,200.00)";
             cmd.Connection = con;
 
            cmd.ExecuteNonQuery();
@@ -124,6 +132,30 @@ namespace inventory
                 }
 
 
+            }
+        }
+
+        private void TxtDiscouont_Leave(object sender, EventArgs e)
+        {
+            Double price = Convert.ToDouble(TxtPrice.Text);
+            Double discount = Convert.ToDouble(TxtDiscouont.Text);
+            Double disval = (price*(discount/100));
+
+            txtDisVal.Text = disval.ToString();
+        }
+
+        private void TxtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+       (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
             }
         }
     }
