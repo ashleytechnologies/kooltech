@@ -5,10 +5,12 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using MessagingToolkit.Barcode;
 
 namespace inventory
+
 {
     public partial class frmBarcode : Form
     {
@@ -49,7 +51,7 @@ namespace inventory
         {
             OD = new OpenFileDialog();
             OD.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
-            if (OD.ShowDialog() == DialogResult.OK)
+            if(OD.ShowDialog()==DialogResult.OK)
                 pictureBox1.Load(OD.FileName);
         }
     }

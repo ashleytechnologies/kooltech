@@ -34,7 +34,7 @@
   <ItemGroup>
     <Reference Include="MessagingToolkit.Barcode, Version=1.8.3.0, Culture=neutral, PublicKeyToken=4d44dd7196d3c1ac, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\MessagingToolkit.Barcode.dll</HintPath>
+      <HintPath>C:\Users\Melisha\Desktop\Barcode_Scanner_Generator_C_Sharp\Barcode_Scanner_Generator_C_Sharp\bin\Debug\MessagingToolkit.Barcode.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data.Entity, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
@@ -75,6 +75,12 @@
     </Compile>
     <Compile Include="frmGoodsReceived.Designer.cs">
       <DependentUpon>frmGoodsReceived.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPayments.Designer.cs">
+      <DependentUpon>frmPayments.cs</DependentUpon>
     </Compile>
     <Compile Include="frmSuppliers.cs">
       <SubType>Form</SubType>
@@ -173,6 +179,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmGoodsReceived.resx">
       <DependentUpon>frmGoodsReceived.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPayments.resx">
+      <DependentUpon>frmPayments.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSuppliers.resx">
       <DependentUpon>frmSuppliers.cs</DependentUpon>

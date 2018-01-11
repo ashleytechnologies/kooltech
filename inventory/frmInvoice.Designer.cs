@@ -127,6 +127,7 @@
             this.lblGrossAmt = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnPayments = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -988,12 +989,23 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
             // 
+            // btnPayments
+            // 
+            this.btnPayments.Location = new System.Drawing.Point(881, 663);
+            this.btnPayments.Name = "btnPayments";
+            this.btnPayments.Size = new System.Drawing.Size(75, 23);
+            this.btnPayments.TabIndex = 87;
+            this.btnPayments.Text = "Payments";
+            this.btnPayments.UseVisualStyleBackColor = true;
+            this.btnPayments.Click += new System.EventHandler(this.btnPayments_Click);
+            // 
             // frmInvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1261, 702);
+            this.Controls.Add(this.btnPayments);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblNetAmt);
             this.Controls.Add(this.label11);
@@ -1148,5 +1160,6 @@
         private System.Windows.Forms.Label lblGrossAmt;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnPayments;
     }
 }

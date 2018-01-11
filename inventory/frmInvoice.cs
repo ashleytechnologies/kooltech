@@ -158,5 +158,10 @@ namespace inventory
                 e.Handled = true;
             }
         }
+
+        private void btnPayments_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
