@@ -1,4 +1,6 @@
-﻿namespace inventory
+﻿using System;
+
+namespace inventory
 {
     partial class frmInvoice
     {
@@ -988,6 +990,7 @@
             this.btnAdd.TabIndex = 86;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnPayments
             // 
@@ -1058,6 +1061,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

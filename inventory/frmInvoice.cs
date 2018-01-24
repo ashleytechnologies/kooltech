@@ -161,7 +161,7 @@ namespace inventory
 
         private void btnPayments_Click(object sender, EventArgs e)
         {
-
+            string amount = lblGrossAmt.Text;
         }
     }
 }

@@ -172,5 +172,4 @@ D:\documents\New folder\kooltech\inventory\obj\Debug\inventory.csproj.GenerateRe
 D:\documents\New folder\kooltech\inventory\obj\Debug\inventory.csproj.CoreCompileInputs.cache
 D:\documents\New folder\kooltech\inventory\obj\Debug\inventory.exe
 D:\documents\New folder\kooltech\inventory\obj\Debug\inventory.pdb
-D:\documents\New folder\kooltech\inventory\bin\Debug\MessagingToolkit.Barcode.dll
 D:\documents\New folder\kooltech\inventory\obj\Debug\inventory.frmPayments.resources
