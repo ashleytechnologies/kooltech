@@ -91,7 +91,7 @@ namespace inventory
             SqlConnection con = connection.OpenConnection();
 
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = System.Data.CommandType.Text;
+            cmd.CommandType = CommandType.Text;
             cmd.CommandText = "INSERT INTO [dbo].[TblItem] ([ItmOrdinary] ,[ItmName] ,[ItemShortDes] ,[ItmDes] ,[ItmImage] ,[ItmVat] ,[ItmWholesalePrice] ,[ItmRetailPrice] ,[ItmMaxDiscount] ,[ItemUniqueId] ,[ItmCategory] ,[ItmSubCategory] ,[ItmBarcode] ,[Itm ReorderQuentity] ,[ItemActive] ,[ItmBrand] ,[ItmCost] ,[ItmMargine], [ItmPrice]) VALUES ('text','text','text','text','text',1,1,1,1,'text','text','text','text',1,1,'text',9,2,200.00)";
             cmd.Connection = con;
 
@@ -161,7 +161,14 @@ namespace inventory
 
         private void btnPayments_Click(object sender, EventArgs e)
         {
-            string amount = lblGrossAmt.Text;
+            Object obj = new Object();
+            Bill bill = new Bill { id = 1,grossAmount=0,discount=0 , itemDiscount=0, netAmount=0};
+            bill.id = Convert.ToInt32(lblInvNo.Text);
+            bill.grossAmount = float.Parse(lblGrossAmt.Text);
+            bill.discount = float.Parse(lblDiscount.Text);
+            bill.itemDiscount = float.Parse(lblItemDis.Text);
+            bill.netAmount = float.Parse(lblNetAmt.Text);
+            frmPayments fp = new frmPayments(bill);
         }
     }
 }

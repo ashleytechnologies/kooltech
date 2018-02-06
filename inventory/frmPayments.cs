@@ -11,9 +11,17 @@ namespace inventory
 {
     public partial class frmPayments : Form
     {
-        public frmPayments()
+        public frmPayments(Bill bill)
         {
+          
             InitializeComponent();
+            txtInvoiceNo.Text = bill.id.ToString();
+            txtPayment.Text = bill.netAmount.ToString();
+        }
+
+        private void frmPayments_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }
