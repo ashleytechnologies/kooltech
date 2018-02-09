@@ -159,6 +159,7 @@
             this.btnSave.TabIndex = 31;
             this.btnSave.Text = "Save Data";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // groupBox1
             // 
@@ -227,7 +228,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(727, 9);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(20, 22);
             this.pictureBox1.TabIndex = 6;
@@ -240,7 +241,7 @@
             this.btnCloseIcon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseIcon.BackgroundImage")));
             this.btnCloseIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCloseIcon.Location = new System.Drawing.Point(749, 9);
-            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnCloseIcon.Margin = new System.Windows.Forms.Padding(1);
             this.btnCloseIcon.Name = "btnCloseIcon";
             this.btnCloseIcon.Size = new System.Drawing.Size(20, 22);
             this.btnCloseIcon.TabIndex = 5;
@@ -253,7 +254,7 @@
             this.btnMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMinimize.BackgroundImage")));
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMinimize.Location = new System.Drawing.Point(704, 9);
-            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.btnMinimize.Margin = new System.Windows.Forms.Padding(1);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(20, 22);
             this.btnMinimize.TabIndex = 3;

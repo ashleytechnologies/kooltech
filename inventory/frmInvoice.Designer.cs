@@ -503,6 +503,7 @@ namespace inventory
             this.stockTakingToolStripMenuItem.Name = "stockTakingToolStripMenuItem";
             this.stockTakingToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.stockTakingToolStripMenuItem.Text = "Stock Taking";
+            this.stockTakingToolStripMenuItem.Click += new System.EventHandler(this.stockTakingToolStripMenuItem_Click);
             // 
             // stockTakingProcessingToolStripMenuItem
             // 
@@ -619,7 +620,7 @@ namespace inventory
             this.reportsToolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 55);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(448, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(568, 24);
             this.menuStrip1.TabIndex = 30;
             this.menuStrip1.Text = "menuStrip1";
             // 

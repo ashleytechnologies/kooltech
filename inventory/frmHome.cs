@@ -88,5 +88,10 @@ namespace inventory
 
 
         }
+
+        private void stockTakingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStock frm = new frmStock();
+        }
     }
 }

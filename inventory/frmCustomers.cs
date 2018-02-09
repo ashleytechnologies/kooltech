@@ -45,8 +45,8 @@ namespace inventory
 
         public static void dataInsertion()
         {
-            int CusId = Convert.ToInt32(txtCustomerCode.Text);
-            string CusName = txtCustomerCode.Text;
+           // int CusId = Convert.ToInt32(txtCustomerCode.Text);
+           // string CusName = txtCustomerCode.Text;
             string CusAddress;
             string CusEmail;
             string CusMobile;
@@ -62,10 +62,10 @@ namespace inventory
             SqlConnection con = connection.OpenConnection();
 
             SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "INSERT INTO [dbo].[TblCustomer] ([CusId] ,[CusName] ,[CusAddress] ,[CusEmail] ,[CusMobile] ,[CusNic] ,[CusWorkPlace] ,[CusWorkAddress] ,[CusWorkPhone] ,[CusCreditLimit] ,[CusJobId] ,[CusDesignationId] ,[Active]) VALUES (@CusId ,@CusName ,@CusAddress ,@CusEmail ,@CusMobile ,@CusNic ,@CusWorkPlace ,@CusWorkAddress ,@CusWorkPhone ,@CusCreditLimit ,@CusJobId ,@CusDesignationId ,@Active)";
-            cmd.Parameters.AddWithValue("@CustomerCode", );
-            cmd.Connection = con;
+          //  cmd.CommandType = CommandType.Text;
+           // cmd.CommandText = "INSERT INTO [dbo].[TblCustomer] ([CusId] ,[CusName] ,[CusAddress] ,[CusEmail] ,[CusMobile] ,[CusNic] ,[CusWorkPlace] ,[CusWorkAddress] ,[CusWorkPhone] ,[CusCreditLimit] ,[CusJobId] ,[CusDesignationId] ,[Active]) VALUES (@CusId ,@CusName ,@CusAddress ,@CusEmail ,@CusMobile ,@CusNic ,@CusWorkPlace ,@CusWorkAddress ,@CusWorkPhone ,@CusCreditLimit ,@CusJobId ,@CusDesignationId ,@Active)";
+            //cmd.Parameters.AddWithValue("@CustomerCode", );
+            //cmd.Connection = con;
 
             cmd.ExecuteNonQuery();
         }
