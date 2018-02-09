@@ -146,7 +146,7 @@
             this.reportsToolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(3, 57);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(448, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(568, 24);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -286,6 +286,7 @@
             this.stockTakingToolStripMenuItem.Name = "stockTakingToolStripMenuItem";
             this.stockTakingToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.stockTakingToolStripMenuItem.Text = "Stock Taking";
+            this.stockTakingToolStripMenuItem.Click += new System.EventHandler(this.stockTakingToolStripMenuItem_Click);
             // 
             // stockTakingProcessingToolStripMenuItem
             // 

@@ -170,5 +170,11 @@ namespace inventory
             bill.netAmount = float.Parse(lblNetAmt.Text);
             frmPayments fp = new frmPayments(bill);
         }
+
+        private void stockTakingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmStock frm = new frmStock();
+            frm.Show();
+        }
     }
 }

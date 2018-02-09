@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,13 @@ namespace inventory
         public frmStock()
         {
             InitializeComponent();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = connection.OpenConnection();
+            SqlCommand cmd = new SqlCommand("INSERT INTO [dbo].[TblStock]([ItmId],[ItmAvailabePcs],[ItmDamagedPcs],[IItemToreturn]) VALUES(10003,234,3,1)", con);
+            cmd.ExecuteNonQuery();
         }
     }
 }
